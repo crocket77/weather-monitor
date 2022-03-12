@@ -1,0 +1,137 @@
+
+header {
+    background-color: aliceblue;
+}
+
+body{
+    background-color: beige;
+}
+
+/* #current */
+.current-container {
+    width: 23%;
+    height: 90px;
+    background-color: rgb(97, 230, 97);
+    border-radius: 20px;
+    margin: 5px 10px;
+    padding: 10px 20px 5px 20px ;
+ }
+
+ .uv-low {
+    background: rgb(3, 133, 3);
+ }
+ 
+ .uv-moderate {
+    background: yellow;
+ }
+ 
+ .uv-extreme {
+    background: rgb(190, 6, 6);
+ }
+
+ .hide{
+     display: none;
+ }
+
+/* FORECAST WEATHER SECTION */
+.forecast {
+    padding: 35px;
+ }
+ 
+ .days {
+    background-color: rgb(69, 69, 223);
+    width: 18%;
+    border-radius: 26px;
+    padding: 20px 0;
+    margin: 0 20px;
+ }
+ 
+ .days h3 {
+    color: var(--tertiary);
+    font-size: 20px;
+    padding-bottom: 5px;
+ }
+ 
+ .img-container {
+    background: var(--secondary);
+    width: 100%;
+    padding: 8px 35px 0 35px;
+    margin: 5px 0 15px 0;
+ }
+ 
+ .day-humidity {
+    padding-bottom: 0;
+    margin: 0;
+ }
+ /*****************************************************/
+ 
+
+ /* MEDIA QUERY STYLES  */
+@media only screen and (max-width: 1100px) {
+    .navigation {
+       padding: 0 40px;
+    }
+ 
+    .search {
+       padding-top: 0;
+       padding-bottom: 20px;
+       margin-bottom: 20px;
+    }
+ 
+    .current-container {
+       padding: 0;
+       width: 33%;
+    }
+
+    #forecast-container{
+        padding:0;
+    }
+
+    .forecast {
+       flex-wrap: wrap;
+       padding-top: 0;
+    }
+ 
+    .days {
+       width: 15%;
+       margin-bottom: 10px;
+    }
+ }
+
+
+ @media only screen and (max-width: 400px) {
+    .navigation {
+       padding: 0 40px;
+    }
+ 
+    .search {
+       padding-top: 0;
+       padding-bottom: 20px;
+       margin-bottom: 20px;
+    }
+ 
+    .current-container {
+       padding: 0;
+       width: 100%;
+    }
+ 
+    .current {
+       margin: 40px 35px;
+       padding: 25px;
+    }
+ 
+    .current h3 {
+       font-size: 18px;
+    }
+    
+   
+    .forecast {
+       flex-wrap: wrap;
+       padding-top: 0;
+    }
+ 
+    .days {
+       width: 100%;
+       margin-bottom: 10px;
+    }
+ }

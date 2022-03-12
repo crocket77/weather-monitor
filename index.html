@@ -27,9 +27,8 @@
         <p class="fs-6">Where would you like to monitor the weather?</p>
     </header>
 
-    <!-- search section -->
-
-    <div class="d-flex flex-wrap justify-content-center">
+<!-- search section -->
+    <section class="d-flex flex-wrap justify-content-center">
         <form id="user-form" class="d-flex flex-wrap justify-content-center">
           <input name="city" id="city" type="text" autofocus="true"
             placeholder="Enter a City"
@@ -38,9 +37,60 @@
           <button id="search-city" type="submit" class="btn-search btn w-100 my-2 p-1 rounded-pill border border-primary">
               Submit <i class="fa-solid fa-bolt-lightning"></i>
           </button>
+        <!-- drop-down select section -->
+          <div class="h-50 px-3 text-center">
+            <select id="cities" class="w-100 my-2 p-2 rounded-pill text-center">
+                <option value="Searched Cities">Searched Cities</option>
+            </select>
+          </div>
         </form>
-    </div>
-   
+    </section>
+    
+<!-- current weather -->
+<center>
+    <section class="d-flex flex-wrap col-sm-8 col-m-10 col-12 justify-content-center border border-rounded w-100">
+        <!-- date -->
+        <div class="justify-content-center border border-dark w-100">
+            <h3 id="todaysDate"></h3>
+        </div>
+        <!-- conditions -->
+        <div id="currentConditions" class="row align-items-center justify-content-center ">
+            <h2 class="w-100 mb-0 text-center">
+                Current conditions: <span id="current-city" class="w-100"></span>
+              </h2>
+              <div class="current-container d-flex flex-wrap justify-content-center col-sm-6 col-md-10 col-12">
+                <h3 class="w-100 text-center">Temperature</h3>
+                <h3 id="temp"></i><i class="fa-solid fa-temperature-low fa-lg"></i></h3>
+              </div>
+              <div class="current-container d-flex flex-wrap justify-content-center col-sm-8 col-m-10 col-12">
+                 <h3 class="w-100 text-center">UV Index</h3>
+                 <h3 id="uv-index"><i class="fa-solid fa-sun"></i></h3>
+              </div>
+              <div class="current-container d-flex flex-wrap justify-content-center">
+                 <h3 class="w-100 text-center">Wind</h3>
+                 <h3 id="wind"><i class="fa-solid fa-wind"></i></h3>
+              </div>
+              <div class="current-container d-flex flex-wrap justify-content-center">
+                 <h3 class="w-100 text-center">Humidity</h3>
+                 <h3 id="humidity"><i class="fa-solid fa-droplet"></i></h3>
+              </div>
+        </div>
+
+
+
+
+    </section>
+</center>
+
+<!-- forecast section -->
+<section id="forecast-container" class="forecast d-flex text-center hide"></section>
+
+
+
+<!-- moment link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<!-- js link -->
+<script src="./assets/js/script.js"></script>
 
 </body>
 </html>

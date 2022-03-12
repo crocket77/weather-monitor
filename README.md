@@ -1,6 +1,6 @@
 This is the Weather monitor that can help you know what the weather will be wherever you are going.
 
-Enter a city and you will get the weather, 
+Enter a city and you will get the current and future weather conditions along with temperature, humidity, wind speed, and the UV index. 
 
 
 
