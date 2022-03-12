@@ -1,8 +1,22 @@
+Weather monitor README
+
 This is the Weather monitor that can help you know what the weather will be wherever you are going.
+
+<img src=./assets/images/weather_monitor.png>
 
 Enter a city and you will get the current and future weather conditions along with temperature, humidity, wind speed, and the UV index. 
 
+It will also save the cities you have searched locally and populate that into the drop down so you can easily look at previously searched cities. 
 
+
+
+
+
+
+
+
+
+These were the design conditions:
 
 AS A traveler I WANT to see the weather outlook for multiple cities SO THAT I can plan a trip accordingly.
 

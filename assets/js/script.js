@@ -50,8 +50,8 @@ function monitorCity(event) {
     let citySearch = inputEl.value.trim();
     
  
-    // send city searched to latLon();
-    latLon(citySearch.toLowerCase());
+    // send city searched to latLonGet();
+    latLonGet(citySearch.toLowerCase());
  
     // if no city is entered 
     if (citySearch === null || citySearch === '') {
@@ -75,7 +75,7 @@ function monitorCity(event) {
 
  
 // convert city searched into lat long with api
-function latLon(city) {
+function latLonGet(city) {
    //capitalize first letter for display
     let cityDisplay=city.split("");
     cityDisplay[0]=cityDisplay[0].toUpperCase()
@@ -215,10 +215,10 @@ function loadCities() {
 function selectFormHandler() {
 
    // save city selected by user
-   let selectedCity = selectEl.options[selectEl.selectedIndex].value;
+   let selectCity = selectEl.options[selectEl.selectedIndex].value;
 
-   // send city to latLon()
-   latLon(selectedCity);
+   // send city to latLonGet()
+   latLonGet(selectCity);
    
    // reset selected city
    selectEl.selectedIndex = 0;
