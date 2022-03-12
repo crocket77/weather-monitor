@@ -45,20 +45,8 @@ body{
     padding: 20px 0;
     margin: 0 20px;
  }
- 
- .days h3 {
-    color: var(--tertiary);
-    font-size: 20px;
-    padding-bottom: 5px;
- }
- 
- .img-container {
-    background: var(--secondary);
-    width: 100%;
-    padding: 8px 35px 0 35px;
-    margin: 5px 0 15px 0;
- }
- 
+
+
  .day-humidity {
     padding-bottom: 0;
     margin: 0;
