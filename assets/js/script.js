@@ -84,7 +84,7 @@ function latLonGet(city) {
     currCity.textContent = cityDisplay;
  
     // fetch information for city
-    let apiUrl = 'http://api.openweathermap.org/geo/1.0/direct?q='+ city + '&appid=' + apiKey;
+    let apiUrl = 'https://api.openweathermap.org/geo/1.0/direct?q='+ city + '&appid=' + apiKey;
     console.log(apiUrl)
     // fetch returns Promise, since it's a slower function, it will run asynchronously 
     fetch(apiUrl)
@@ -290,7 +290,7 @@ function forecast(cityForecast) {
       // create icon 
       let dayIcon = document.createElement('img');
       dayIcon.classList = 'icon'
-      dayIcon.setAttribute('src','http://openweathermap.org/img/wn/' + cityForecast[i].weather[0].icon + '@2x.png');
+      dayIcon.setAttribute('src','https://openweathermap.org/img/wn/' + cityForecast[i].weather[0].icon + '@2x.png');
       // append img to container
       iconContainer.append(dayIcon);
 
