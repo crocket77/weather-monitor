@@ -3,7 +3,7 @@ Weather monitor README
 Github repository:
 https://github.com/crocket77/weather-monitor
 
-deployed page: ***note Github does not support the API call.
+deployed page: ***note Github does not support the API call. Please follow the directions below. 
 https://crocket77.github.io/weather-monitor/
 
 This is the Weather monitor that can help you know what the weather will be wherever you are going.
